@@ -15,7 +15,10 @@
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- ================ Navbar ================ -->
-    <nav id="navbar" class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg bg-black navbar-dark fixed-top"
+    >
       <div class="container d-flex justify-content-between align-items-center">
         <a class="navbar-brand nv-font" href="#">DevFolio</a>
         <button
@@ -32,7 +35,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active nav-effact" aria-current="page" href="#home"
+              <a
+                class="nav-link active nav-effact"
+                aria-current="page"
+                href="#home"
                 >Home</a
               >
             </li>
@@ -57,30 +63,43 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Drop down <i class="fa-solid fa-chevron-down fs-6 text-secondary"></i>
+                Drop down
+                <i class="fa-solid fa-chevron-down fs-6 text-secondary"></i>
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
-            
+
                 <!-- ===== Deep Dropdown ===== -->
                 <li class="dropdown-submenu">
-                  <a class="dropdown-item" href="#">Deep Drop Down <i class="fa-solid fa-chevron-down fa-rotate-270 fs-6"></i></a>
+                  <a class="dropdown-item" href="#"
+                    >Deep Drop Down
+                    <i class="fa-solid fa-chevron-down fa-rotate-270 fs-6"></i
+                  ></a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Deep Drop Down 1</a></li>
-                    <li><a class="dropdown-item" href="#">Deep Drop Down 2</a></li>
-                    <li><a class="dropdown-item" href="#">Deep Drop Down 3</a></li>
-                    <li><a class="dropdown-item" href="#">Deep Drop Down 4</a></li>
-                    <li><a class="dropdown-item" href="#">Deep Drop Down 5</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Deep Drop Down 1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Deep Drop Down 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Deep Drop Down 3</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Deep Drop Down 4</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Deep Drop Down 5</a>
+                    </li>
                   </ul>
-                </li>                
+                </li>
                 <!-- ===== End Deep Dropdown ===== -->
-            
+
                 <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
                 <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
                 <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
               </ul>
             </li>
-            
 
             <li class="nav-item">
               <a class="nav-link nav-effact" href="#contact">Contact</a>
@@ -112,7 +131,6 @@
         </div>
       </div>
     </header>
-    
 
     <!-- ================= About me ============= -->
     <section id="about" class="container shadow rounded p-4 my-5">
@@ -631,9 +649,11 @@
     </section>
 
     <!-- ========================== Carousel ==================== -->
-    <div
+    <section
       id="carouselExampleDark"
       class="carousel slide text-white contact-us py-5"
+      style="min-height: 500px;"
+      data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
         <button
@@ -653,38 +673,54 @@
       </div>
 
       <div class="carousel-inner text-center py-5">
-        <div class="carousel-item active" data-bs-interval="5000">
-          <img
-            src="Images/testimonial-2.jpg"
-            class="rounded-circle shadow mb-4"
-            width="100"
-            height="100"
-            alt="..."
-            style="object-fit: cover"
-          />
-          <h5 class="fw-bold text-uppercase serv-font-3">Marta Socrate</h5>
-          <p class="w-75 mx-auto carous-font">
-            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+        <div class="carousel-item active" data-bs-interval="3000">
+          <div
+            class="row justify-content-center flex-column align-items-center"
+          >
+            <div class="col-auto">
+              <img
+                src="Images/testimonial-2.jpg"
+                class="rounded-circle shadow mb-4"
+                width="100"
+                height="100"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="col-auto">
+              <h5 class="fw-bold text-uppercase serv-font-3">Marta Socrate</h5>
+              <p class="w-75 mx-auto carous-font">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img
-            src="Images/testimonial-4.jpeg"
-            class="rounded-circle shadow mb-4"
-            width="100"
-            height="150"
-            alt="..."
-            style="object-fit: cover"
-          />
-          <h5 class="fw-bold text-uppercase serv-font-3">John Doe</h5>
-          <p class="w-75 mx-auto carous-font">
-            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-            dui. Nulla porttitor accumsan tincidunt.
-          </p>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div
+            class="row justify-content-center flex-column align-items-center"
+          >
+            <div class="col-auto">
+              <img
+                src="Images/testimonial-4.jpeg"
+                class="rounded-circle shadow mb-4"
+                width="100"
+                height="150"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="col-auto">
+              <h5 class="fw-bold text-uppercase serv-font-3">John Doe</h5>
+              <p class="w-75 mx-auto carous-font">
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                dui. Nulla porttitor accumsan tincidunt.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ======================== Blog =========================-->
     <section id="blog" class="container s p-5">
